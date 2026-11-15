@@ -1,0 +1,43 @@
+metric,F1 (2026-02-14),F2 (2026-03-01),units,how
+Liftoff (local time),2026-02-14 14:37:50,2026-03-01 14:47:16,,GPS clock at altimeter liftoff
+Height source used,barometer,gps,,barometer unless it disagrees with GPS apogee by more than 5 %
+Maximum altitude (apogee),4925.0,4120.0,ft AGL,max of the trusted height (see Height source used)
+"Apogee, barometric (smoothed)",4925.0,4438.8,ft AGL,max of height_agl_smooth_ft
+"Apogee, GPS",4875.0,4120.0,ft AGL,max of GPS alt_agl_ft
+Apogee time,16.8,15.9,s,altimeter's own apogee detection
+Main chute opening time,69.8,62.4,s,descent rate drops below 40 ft/s and stays there 3 s
+Main chute opening height,556.5,269.5,ft AGL,trusted height at main opening
+Touchdown time,102.8,79.4,s,first time within 5 ft of final resting height
+Flight duration,102.8,79.4,s,touchdown - liftoff
+Ascent duration,16.8,15.9,s,apogee - liftoff
+Descent duration,86.0,63.5,s,touchdown - apogee
+Time under drogue,53.0,46.5,s,main opening - apogee
+Time under main,33.0,17.0,s,touchdown - main opening
+"Average descent rate, drogue",82.4,82.8,ft/s,(apogee - main height) / time under drogue
+"Average descent rate, main",17.1,17.2,ft/s,(main height - ground) / time under main
+"Average descent rate, overall",57.4,65.2,ft/s,(apogee - ground) / descent duration
+Peak upward speed,992.4,570.0,ft/s,max vertical_speed_fts before apogee
+Peak speed source,barometric estimate,inertial,,inertial (measured) or barometric estimate
+Pad latitude,41.77782,41.77755,deg,first GPS fix
+Pad longitude,-86.57681,-86.57683,deg,first GPS fix
+Landing latitude,41.78003,41.78214,deg,median of GPS fixes after touchdown
+Landing longitude,-86.57258,-86.57824,deg,median of GPS fixes after touchdown
+Landing displacement,1405.1,1717.9,ft,"straight line, pad to landing (Method 1)"
+Landing direction,55.0,347.1,deg,"bearing from north: 0 = N, 90 = E, 180 = S, 270 = W"
+Landing direction (compass),NE,NNW,,16-point compass
+"Landing displacement, north",806.2,1674.5,ft,negative = south
+"Landing displacement, east",1150.8,-383.6,ft,negative = west
+Horizontal displacement at apogee,616.5,1966.9,ft,GPS position at apogee vs pad
+Direction at apogee,30.9,4.8,deg,bearing from north
+Ground track length,2296.5,3283.7,ft,"sum of distances between GPS fixes, liftoff to touchdown"
+Drift during ascent,616.5,1966.9,ft,GPS movement between the start and end of the phase
+Drift direction during ascent,30.9,4.8,deg,bearing from north
+Drift during drogue,929.0,516.2,ft,GPS movement between the start and end of the phase
+Drift direction during drogue,82.9,262.8,deg,bearing from north
+Wind estimate under drogue,12.0,7.6,mph,"drift / time under that parachute, blowing toward the drift direction"
+Drift during main,188.3,214.9,ft,GPS movement between the start and end of the phase
+Drift direction during main,331.5,188.7,deg,bearing from north
+Wind estimate under main,3.9,8.6,mph,"drift / time under that parachute, blowing toward the drift direction"
+"Apogee, inertial",,4244.0,ft,max of Blue Raven inertial_alt_ft
+Tilt from vertical at apogee,,96.5,deg,Blue Raven tilt_deg
+"Horizontal displacement at apogee, inertial",,1984.6,ft,Blue Raven inertial position at apogee
